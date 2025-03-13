@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+      .img
+      {
+         width: 200px; 
+         height: 100px;
+         border-radius: 50%; 
+         display: block;
+         margin-left: auto; 
+         margin-right: auto;
+      }
+      h4 
+      {
+        text-align: center;
+       
+      }
+      .container 
+      {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        align-items: center;
+       
+        
+       
+      }
+      .box1 
+      {
+        height: 600px;
+        width: 200px;
+        background-color: fuchsia;
+        font-size: 40pt;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+       
+
+
+      }
+      .box2
+      {
+        height: 400px;
+        width: 200px;
+       background-color: gray;
+        font-size: 40pt;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+
+      }
+      .box3
+      {
+        height: 200px;
+        width: 200px;
+       background-color: mediumblue;
+        font-size: 40pt;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+
+      }
+      .column
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    
+</head>
+<body>
+       
+   
+<img src="test.jpg" alt="Logo" class="img">
+  <h4 >  TITLE  </h4>
+  
+  <div class="container">
+    <div class="box1"> Rec </div>
+   <div class="column">
+    <div class="box2"> Rec </div>
+    <div class="box3"> Rec </div>
+   </div>
+    
+  </div>
+  
+
+
+    
+</body>
+</html>
