@@ -4,86 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
-    <style>
-      .img
-      {
-         width: 200px; 
-         height: 100px;
-         border-radius: 50%; 
-         display: block;
-         margin-left: auto; 
-         margin-right: auto;
-      }
-      h4 
-      {
-        text-align: center;
-       
-      }
-      .container 
-      {
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        align-items: center;
-       
-        
-       
-      }
-      .box1 
-      {
-        height: 600px;
-        width: 200px;
-        background-color: fuchsia;
-        font-size: 40pt;
-        display: flex;
-       align-items: center;
-        justify-content: center;
-       
-
-
-      }
-      .box2
-      {
-        height: 400px;
-        width: 200px;
-       background-color: gray;
-        font-size: 40pt;
-        display: flex;
-       align-items: center;
-        justify-content: center;
-
-      }
-      .box3
-      {
-        height: 200px;
-        width: 200px;
-       background-color: mediumblue;
-        font-size: 40pt;
-        display: flex;
-       align-items: center;
-        justify-content: center;
-
-      }
-      .column
-      {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    
     
 </head>
 <body>
        
    
 <img src="test.jpg" alt="Logo" class="img">
-  <h4 >  TITLE  </h4>
+  <h4 >  Air Quality Index  </h4>
   
   <div class="container">
-    <div class="box1"> Rec </div>
+    <div class="box1"> 
+      <form action="">
+        <h4> Registration Form </h4>
+        <label for="fullname"> Full Name :</label> 
+        <input type="text" id="fullname" name="fullname"> <br> 
+        <label for="email"> Email :</label> 
+        <input type="email" id="email" name="email"> <br>
+        <label for="password"> password :</label>
+        <input type="password" id="password" name="password"> <br>
+        <label for="c_password"> Confirm password :</label>
+        <input type="password" id="c_password" name="c_password"> <br>
+        <label for="dob"> Date Of Birth : </label>
+        <input type="date" id="dob" name="dob"> <br>
+        <label for="country"> Country :</label>
+        <select name="country" id="country">
+          <option value="bangladesh"> Bangladesh</option>
+          <option value="russia"> Russia</option>
+          <option value="canada"> Canada</option>
+          <option value="china"> China</option>
+          <option value="usa"> U.S.A</option>
+        </select> <br>
+        <label for="male"> Male</label>
+        <input type="radio" id="male" name="gender" value="Male"> <br>
+        <label for="female"> Female</label>
+        <input type="radio" id="female" name="gender" value="Female"> 
+        <label for="color" class="color"> Color :</label>
+        <input type="color" id="color" name="color" > <br>
+        <label for="opinion"> Share your opinion :</label> <br>
+        <textarea name="opinion" id="opinion" rows="3" cols="25"> </textarea> <br>
+        <label for="terms"> I Agree on the terms & conditions </label> 
+        <input type="checkbox" id="terms" name="terms" value="terms"> <br>
+        <a href="http://"> Terms & Conditions </a> <br>
+        <input type="submit">
+
+      </form>
+    </div>
    <div class="column">
     <div class="box2"> Rec </div>
     <div class="box3"> Rec </div>

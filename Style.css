@@ -1,0 +1,135 @@
+
+      .img
+      {
+         width: 200px; 
+         height: 100px;
+         border-radius: 50%; 
+         display: block;
+         margin-left: auto; 
+         margin-right: auto;
+      }
+      h4 
+      {
+        text-align: center;
+      
+       
+      }
+      .container
+      {
+        
+        
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          
+          align-items: center;
+         
+          
+         
+        
+      }
+      
+      .box1 
+      {
+        height: 600px;
+        width: 500px;
+        background-color: sienna;
+        display: flex;
+        justify-content: space-around;
+        line-height: 2;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        
+        
+       
+
+
+      }
+      .box2
+      {
+        height: 400px;
+        width: 200px;
+       background-color: gray;
+        font-size: 40pt;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+
+      }
+      .box3
+      {
+        height: 200px;
+        width: 200px;
+       background-color: mediumblue;
+        font-size: 40pt;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+
+      }
+      .column
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+   .color
+   {
+    padding: 25px;
+   }
+
+   body 
+   {
+    font-family: Arial, sans-serif;
+    
+    background-color: #f4f4f4;
+    
+}
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+input[type="radio"], input[type="checkbox"]
+ {
+  width: auto;
+  margin-right: 5px;
+}
+a
+ {
+  color: lemonchiffon;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+a:hover 
+{
+  text-decoration: underline;
+}
+input[type="submit"] 
+{
+  background: darkgoldenrod;
+  color: lightyellow;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 4px;
+  
+}
+input[type="submit"]:hover
+ {
+  background: darkorange;
+}
+
+
+input, select, textarea 
+{
+  
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
