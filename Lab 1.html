@@ -16,7 +16,7 @@
   
   <div class="container">
     <div class="box1"> 
-      <form action="">
+      <form id="form" action="">
         <h4> Registration Form </h4>
         <label for="fullname"> Full Name :</label> 
         <input type="text" id="fullname" name="fullname"> <br> 
@@ -26,8 +26,8 @@
         <input type="password" id="password" name="password"> <br>
         <label for="c_password"> Confirm password :</label>
         <input type="password" id="c_password" name="c_password"> <br>
-        <label for="dob"> Date Of Birth : </label>
-        <input type="date" id="dob" name="dob"> <br>
+        <label for="dob"> Year Of Birth : </label>
+        <input type="text" id="dob" name="dob"> <br>
         <label for="country"> Country :</label>
         <select name="country" id="country">
           <option value="bangladesh"> Bangladesh</option>
@@ -47,7 +47,7 @@
         <label for="terms"> I Agree on the terms & conditions </label> 
         <input type="checkbox" id="terms" name="terms" value="terms"> <br>
         <a href="http://"> Terms & Conditions </a> <br>
-        <input type="submit">
+        <input type="submit" name="submit" value="submit" onclick="validate()">
 
       </form>
     </div>
@@ -60,6 +60,6 @@
   
 
 
-    
+    <script src="Form.js"></script>
 </body>
 </html>
