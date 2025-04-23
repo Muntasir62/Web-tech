@@ -16,19 +16,49 @@
   
   <div class="container">
     <div class="box1"> 
-      <form id="form" action="">
+      <form id="form" action="" onsubmit="return validate()">
         <h4> Registration Form </h4>
-        <label for="fullname"> Full Name :</label> 
-        <input type="text" id="fullname" name="fullname"> <br> 
-        <label for="email"> Email :</label> 
-        <input type="email" id="email" name="email"> <br>
-        <label for="password"> password :</label>
-        <input type="password" id="password" name="password"> <br>
-        <label for="c_password"> Confirm password :</label>
-        <input type="password" id="c_password" name="c_password"> <br>
+
+      
+        <div class="input-field">
+          <label for="fullname"> Full Name :</label> 
+        <input type="text" id="fullname" name="fullname" onkeyup="validatename()"> <br> 
+        <span id="name_error"></span>
+        </div>
+        
+        
+
+       
+        <div class="input-field">
+          <label for="email"> Email :</label> 
+          <input type="email" id="email" name="email" onkeyup="validate_email()"> <br>
+          <span id="email_error"></span>
+        </div>
+        
+
+         <div class="input-field">
+          <label for="password"> password :</label>
+          <input type="password" id="password" name="password" onkeyup="validatepass()"> <br>
+          <span id="pass_error"></span> 
+         </div>
+
+        <div class="input-field">
+          <label for="c_password"> Confirm password :</label>
+          <input type="password" id="c_password" name="c_password" onkeyup="validatepass()"> <br>
+          <span id="c_pass_error"></span> 
+        </div>
+        
+        
+      <div class="input-field">
+        
         <label for="dob"> Year Of Birth : </label>
-        <input type="text" id="dob" name="dob"> <br>
-        <label for="country"> Country :</label>
+        <input type="text" id="dob" name="dob" onkeyup="validatedob()"> <br>
+        <span id="dob_error"></span>
+      </div>
+        
+
+        <div class="input-field">
+          <label for="country"> Country :</label>
         <select name="country" id="country">
           <option value="bangladesh"> Bangladesh</option>
           <option value="russia"> Russia</option>
@@ -36,18 +66,39 @@
           <option value="china"> China</option>
           <option value="usa"> U.S.A</option>
         </select> <br>
-        <label for="male"> Male</label>
-        <input type="radio" id="male" name="gender" value="Male"> <br>
-        <label for="female"> Female</label>
-        <input type="radio" id="female" name="gender" value="Female"> 
-        <label for="color" class="color"> Color :</label>
-        <input type="color" id="color" name="color" > <br>
+        </div>
+        
+        
+        <div class="input-row">
+          <div class="input-field">
+            <label for="male"> Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female"> Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+          </div>
+        
+          <div class="input-field color-side">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+          </div>
+        </div>
+        
+
+       <div class="input-field">
         <label for="opinion"> Share your opinion :</label> <br>
+        
         <textarea name="opinion" id="opinion" rows="3" cols="25"> </textarea> <br>
-        <label for="terms"> I Agree on the terms & conditions </label> 
+       </div>
+
+        <div class="input-field">
+          
+          <label for="terms"> I Agree on the terms & conditions </label> 
         <input type="checkbox" id="terms" name="terms" value="terms"> <br>
+        </div>
+        
+
         <a href="http://"> Terms & Conditions </a> <br>
-        <input type="submit" name="submit" value="submit" onclick="validate()">
+        <input type="submit" name="submit" value="Submit" >
 
       </form>
     </div>

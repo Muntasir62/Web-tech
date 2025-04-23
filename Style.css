@@ -31,7 +31,7 @@
       
       .box1 
       {
-        height: 600px;
+        height: 900px;
         width: 500px;
         background-color: sienna;
         display: flex;
@@ -39,7 +39,7 @@
         line-height: 2;
         flex-direction: column;
         align-items: center;
-       text-align: left;
+      text-align: left;
         
         
        
@@ -48,18 +48,18 @@
       }
       .box2
       {
-        height: 400px;
+        height: 600px;
         width: 200px;
        background-color: gray;
         font-size: 40pt;
-        display: flex;
+       display: flex;
        align-items: center;
         justify-content: center;
 
       }
       .box3
       {
-        height: 200px;
+        height: 300px;
         width: 200px;
        background-color: mediumblue;
         font-size: 40pt;
@@ -79,6 +79,7 @@
    .color
    {
     padding: 25px;
+    
    }
 
    body 
@@ -88,14 +89,15 @@
     background-color: #f4f4f4;
     
 }
-label {
+label 
+{
   font-weight: bold;
   margin-top: 10px;
 }
 input[type="radio"], input[type="checkbox"]
  {
   width: auto;
-  margin-right: 5px;
+ margin-right: 5px;
 }
 a
  {
@@ -110,7 +112,7 @@ a:hover
 }
 input[type="submit"] 
 {
-  background: darkgoldenrod;
+  background-color: mediumorchid;
   color: lightyellow;
   border: none;
   padding: 10px;
@@ -118,7 +120,7 @@ input[type="submit"]
   margin-top: 15px;
   border-radius: 4px;
   display: block;
-  margin: auto;
+ margin: auto;
   
 }
 input[type="submit"]:hover
@@ -134,4 +136,30 @@ input, select, textarea
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.input-field span
+{
+  font-size: 14px;
+  color: red;
+}
+.input-row 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* space between gender and color */
+  width: 100%;
+}
+
+.input-row .input-field 
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-row .color-side 
+{
+  justify-content: flex-end;
 }
