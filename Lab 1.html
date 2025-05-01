@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel = "stylesheet" type = "text/css" href = "Style.css">
+    <link rel="stylesheet" type="text/css" href="Aqi.css">
+    
+    
+</head>
+<body>
+       
+   
+<img src="test.jpg" alt="Logo" class="img">
+  <h4 >  Air Quality Index  </h4>
+  
+  <div class="container">
+    <div class="box1"> 
+      <form id="form" action="" onsubmit="return validate()">
+        <h4> Registration Form </h4>
+
+      
+        <div class="input-field">
+          <label for="fullname"> Full Name :</label> <br>
+        <input type="text" id="fullname" name="fullname" onkeyup="validatename()"> <br> 
+        <span id="name_error"></span> 
+        </div>
+        
+        
+
+       
+        <div class="input-field">
+          <label for="email"> Email :</label> <br>
+          <input type="email" id="email" name="email" onkeyup="validate_email()"> <br>
+          <span id="email_error"></span> 
+        </div>
+        
+
+         <div class="input-field">
+          <label for="password"> Password :</label> <br>
+          <input type="password" id="password" name="password" onkeyup="validatepass()"> <br>
+          <span id="pass_error"></span> 
+         </div>
+
+        <div class="input-field">
+          <label for="c_password"> Confirm password :</label> <br>
+          <input type="password" id="c_password" name="c_password" onkeyup="validatepass()"> <br>
+          <span id="c_pass_error"></span> 
+        </div>
+        
+        
+      <div class="input-field">
+        
+        <label for="dob"> Year Of Birth : </label> <br>
+        <input type="text" id="dob" name="dob" onkeyup="validatedob()"> <br>
+        <span id="dob_error"></span>
+      </div>
+        
+
+        <div class="input-field">
+          <label for="country"> Country :</label> <br>
+        <select name="country" id="country">
+          <option value="bangladesh"> Bangladesh</option>
+          <option value="russia"> Russia</option>
+          <option value="canada"> Canada</option>
+          <option value="china"> China</option>
+          <option value="usa"> U.S.A</option>
+        </select> <br>
+        </div>
+        
+        
+        <div class="input-row">
+          <div class="input-field">
+            <label for="male"> Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female"> Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+          </div>
+        
+          <div class="input-field color-side">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+          </div>
+        </div>
+        
+
+       <div class="input-field">
+        <label for="opinion"> Share your opinion :</label> <br>
+        
+        <textarea name="opinion" id="opinion" rows="3" cols="25"> </textarea> <br>
+       </div>
+
+        <div class="input-field">
+          
+          <label for="terms"> I Agree on the terms & conditions </label> 
+        <input type="checkbox" id="terms" name="terms" value="terms"> <br>
+        </div>
+        
+
+        <a href="http://"> Terms & Conditions </a> <br>
+        <input type="submit" name="submit" value="Submit" >
+
+      </form>
+    </div>
+   <div class="column">
+    <div class="box2"> 
+      <form id="form" action="">
+        <h4> Login </h4>
+
+        <div class="input-field">
+          <label for="email"> Email :</label>  <br>
+          <input type="email" id="email" name="email" > <br>
+          <span id="email_error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password"> Password :</label> <br>
+          <input type="password" id="password" name="password" > <br>
+          <span id="pass_error"></span> <br>
+         </div>
+
+         <input type="submit" name="submit" value="Submit" >
+
+       </div>
+    <div class="box3"> 
+      <table>
+        <thead>  <tr>
+                <th>City</th>
+                <th>AQI</th>
+            </tr>
+        </thead>
+        <tbody>  <tr>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+       </div>
+   </div>
+    
+  </div>
+  
+
+
+    <script src="Form.js"></script>
+</body>
+</html>
