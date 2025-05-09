@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <link rel = "stylesheet" type = "text/css" href = "Style.css">
-    <link rel="stylesheet" type="text/css" href="Aqi.css">
+    <link rel="stylesheet" type="text/css" href="aqi.css">
     
     
 </head>
-<body>
+<body class="my_page">
        
    
 <img src="test.jpg" alt="Logo" class="img">
@@ -17,7 +17,7 @@
   
   <div class="container">
     <div class="box1"> 
-      <form id="form" action="" onsubmit="return validate()">
+      <form id="form" action="process.php" method="post" onsubmit="return validate()">
         <h4> Registration Form </h4>
 
       
@@ -61,11 +61,11 @@
         <div class="input-field">
           <label for="country"> Country :</label> <br>
         <select name="country" id="country">
-          <option value="bangladesh"> Bangladesh</option>
-          <option value="russia"> Russia</option>
-          <option value="canada"> Canada</option>
-          <option value="china"> China</option>
-          <option value="usa"> U.S.A</option>
+          <option value="Bangladesh"> Bangladesh</option>
+          <option value="Russia"> Russia</option>
+          <option value="Canada"> Canada</option>
+          <option value="China"> China</option>
+          <option value="Usa"> U.S.A</option>
         </select> <br>
         </div>
         
@@ -124,16 +124,19 @@
 
        </div>
     <div class="box3"> 
+      <h3 class="warning"> Login Required </h3>
       <table>
         <thead>  <tr>
                 <th>City</th>
                 <th>AQI</th>
             </tr>
+            
         </thead>
         <tbody>  <tr>
                 <td> </td>
                 <td> </td>
             </tr>
+            
             <tr>
                 <td></td>
                 <td></td>

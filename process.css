@@ -1,0 +1,55 @@
+body
+{
+    background-color: darkorchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.info
+{
+  
+  
+    border: 2px solid black;
+    padding: 30px ;
+    background-color: darkgray;
+    border-radius: 8px;
+   width: 100%;
+
+
+}
+.info h4
+{
+    margin-bottom: 30px;
+}
+.buttons
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+.c_btn, .b_btn
+{
+    background-color: darkolivegreen;
+    color: darkgray;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+    border-radius: 4px;
+    
+   width: auto;
+
+}
+.c_btn:hover, .b_btn:hover
+{
+background-color: darkred;
+}
