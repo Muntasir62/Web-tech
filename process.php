@@ -8,7 +8,7 @@ $country = $_POST['country'];
 $gender = $_POST['gender'];
 $color = $_POST['color'];
 $opinion = $_POST['opinion'];
-if (isset($_POST['submit'])) 
+if (isset($_POST['submit']))
 
 {
    echo "<!DOCTYPE html>";
