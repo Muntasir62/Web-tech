@@ -7,11 +7,54 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: powderblue;
+    background-color:lightskyblue;
     padding: 20px;
 }
 
+.header_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:   20px; 
+    padding-right: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+   
+}
+.request_profile_btn
+{
+    
+    margin-bottom: 10px; 
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    
+}
+.request_logout_btn
+ {
+    
+    padding: 10px 20px;
+    background-color:lightseagreen;
+    color: black;
+  
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
 
+.request_profile_btn:hover,
+.request_logout_btn:hover 
+{
+    background-color:magenta;
+}
 #request_form {
     max-width: 800px;
     margin: 0 auto;
@@ -74,7 +117,7 @@ input[type="submit"] {
     padding: 12px 30px;
     background-color: lightblue;
     color:black;
-    /*border: none;*/
+    
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -84,6 +127,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: lightcyan;
 }
+
+
+
 
 
 @media (max-width: 600px) {

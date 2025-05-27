@@ -58,6 +58,48 @@ tr:hover {
     transition: background-color 0.2s;
 }
 
+.header_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:   20px; 
+    padding-right: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+.showaqi_profile_btn
+{
+    margin-bottom: 10px; 
+    padding: 10px 20px;
+    background-color:maroon;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.showaqi_logout_btn
+ {
+    
+    padding: 10px 20px;
+    background-color:maroon;
+    color: black;
+  
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.showaqi_profile_btn:hover,
+.showaqi_logout_btn:hover 
+{
+    background-color:linen;
+}
+
 
 @media (max-width: 600px) {
     table {

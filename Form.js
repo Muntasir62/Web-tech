@@ -152,7 +152,8 @@ function validate()
    localStorage.setItem('opinion', opinion.value);
    localStorage.setItem('terms', 'Accepted');
 
-   alert('Registration successful');
+   alert('Information Submitted ');
  return true;
+
 
 }

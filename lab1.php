@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +10,8 @@
     
     
 </head>
-<body class="my_page">
-       
+<body class="my_page">   
+        
    
 <img src="test.jpg" alt="Logo" class="img">
   <h4 >  Air Quality Index  </h4>
@@ -101,26 +102,28 @@
         <a href="http://"> Terms & Conditions </a> <br>
         <input type="submit" name="submit" value="Submit" >
 
+
+
       </form>
     </div>
    <div class="column">
     <div class="box2"> 
-      <form id="form" action="">
+      <form id="form" action="login_process.php" method = "post">
         <h4> Login </h4>
 
         <div class="input-field">
           <label for="email"> Email :</label>  <br>
-          <input type="email" id="email" name="email" > <br>
-          <span id="email_error"></span>
+          <input type="email" id="login_email" name="email" > <br>
+          <span id="login_email_error"></span>
         </div>
 
         <div class="input-field">
           <label for="password"> Password :</label> <br>
-          <input type="password" id="password" name="password" > <br>
-          <span id="pass_error"></span> <br>
+          <input type="password" id="login_password" name="password" > <br>
+          <span id="login_pass_error"></span> <br>
          </div>
 
-         <input type="submit" name="submit" value="Submit" >
+         <input type="submit" name="login_submit" value="Submit" >
 
        </div>
     <div class="box3"> 
@@ -186,6 +189,10 @@
   
 
 
-    <script src="Form.js"></script>
+    <script src="form.js"></script>
+    
+
+
 </body>
 </html>
+

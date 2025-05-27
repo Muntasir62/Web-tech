@@ -1,24 +1,32 @@
 <?php
 session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
+{
+  header ("refresh: 1; url = lab1.php");
+  exit();
+}
 ?>
 <script>
   function validate_selection()
   {
     var checkbox = document.querySelectorAll('input[name="cities[]"]:checked');
       if (checkbox.length < 10) {
-        alert('Please select exactly 10 cities');
+        alert('Please select at least 10 cities');
         return false;
     }
-    if (checkbox.length > 10) {
-        alert('You can select only 10 cities');
-        return false;
-    }
+   
     return true;
   }
 </script>
-<link rel="stylesheet" href="request.css">
+<link rel="stylesheet" href="Request.css">
+<div class="header_btn">
+  <a href='profile.php' class='request_profile_btn'> Profile </a>
+ <a href='lab1.php' class='request_logout_btn'> Logout </a>
+</div>
  <form id='request_form' action='showaqi.php' method='post' onsubmit= " return validate_selection()" >
+  
  <h4>Available Cities</h4> <br>
+ 
   <div class='info'>
 <div class='city_info'>
     <label for='kathmandu'> Kathmandu</label>
