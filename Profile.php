@@ -8,7 +8,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 $con = mysqli_connect("localhost", "root", "", "AQI");
 if (!$con) { 
-    die("Connection failed: " . mysqli_connect_error());
+    echo "Connection failed: ". mysqli_connect_error(); 
 }
 
 $logged_in_email = $_SESSION['user_email'];

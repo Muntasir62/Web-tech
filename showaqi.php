@@ -1,9 +1,26 @@
 <div class="header_btn">
    <a href='profile.php' class='showaqi_profile_btn'> Profile </a>
- <a href='lab1.php' class='showaqi_logout_btn'> Logout </a>
+ 
+ <a href="showaqi.php?logout=true" class="showaqi_logout_btn">Logout</a>
 </div>
 <?php
 session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+   header("refresh: 0; url = lab1.php");
+    exit();
+}
+if (isset($_GET['logout'])) {
+    
+    session_unset();
+    session_destroy();
+    session_start();
+   
+    
+    session_regenerate_id(true);
+    header("refresh: 0; url = lab1.php");
+    exit();
+}
 $user_bgcolor = 'silver';
 if (isset($_COOKIE['user_bgcolor']) && !empty($_COOKIE['user_bgcolor']))
 {
@@ -73,11 +90,13 @@ $obj = mysqli_query($con, $sql);
   mysqli_free_result($obj);
     
    
-unset($_SESSION['selected_cities']);
+
+
  
 
 
 mysqli_close($con);
+unset($_SESSION['selected_cities']);
 echo "</body>";
 echo "</html>";
 ?>

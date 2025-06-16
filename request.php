@@ -2,8 +2,19 @@
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 {
-  header ("refresh: 1; url = lab1.php");
+  header ("refresh: 0; url = lab1.php");
   exit();
+}
+if (isset($_GET['logout'])) {
+    
+    session_unset();
+    session_destroy();
+    session_start();
+   
+    
+    session_regenerate_id(true);
+    header("refresh: 0; url = lab1.php");
+    exit();
 }
 ?>
 <script>
@@ -21,7 +32,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 <link rel="stylesheet" href="Request.css">
 <div class="header_btn">
   <a href='profile.php' class='request_profile_btn'> Profile </a>
- <a href='lab1.php' class='request_logout_btn'> Logout </a>
+ <a href="showaqi.php?logout=true" class="request_logout_btn">Logout</a>
 </div>
  <form id='request_form' action='showaqi.php' method='post' onsubmit= " return validate_selection()" >
   

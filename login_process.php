@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 if(isset($_POST['login_submit']))
 {
     $email = $_POST['email'];
@@ -8,7 +10,7 @@ if(isset($_POST['login_submit']))
     $conn = mysqli_connect("localhost", "root", "", "aqi");
 
      if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+        echo "Connection failed: ". mysqli_connect_error();
     }
         $sql = "SELECT * FROM user WHERE Email = '$email' AND Password = '$password'";
         $result = mysqli_query($conn, $sql);
@@ -22,7 +24,8 @@ if(isset($_POST['login_submit']))
         exit();
 
 }
- else {
+ else 
+ {
        
         echo "<!DOCTYPE html>";
         echo "<html lang='en'>";

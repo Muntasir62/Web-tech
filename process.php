@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     if (isset($_POST['confirm_submit'])) {
         $con = mysqli_connect("localhost", "root", "", "aqi"); 
         if (!$con) {
-            die("Connection failed: " . mysqli_connect_error());
+            echo "Connection failed: ". mysqli_connect_error();
         }
 
        
